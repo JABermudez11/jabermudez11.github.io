@@ -16,6 +16,7 @@ html, body{
 h1, h2, h3, h4, h5, h6, strong{
     color: var(--mainText);
     font-family: 'Russo One', sans-serif;
+    font-weight: 500;
 }
 
 p, li, span, label, input, textarea{
@@ -54,6 +55,38 @@ h6{ font-size: 16px }
 .main-container{
     width: 1200px;
     margin: 0 auto;
+}
+
+.greeting-wrapper{
+    display: grid;
+    text-align: center;
+    align-content: center;
+    border: 2px dashed lightcoral;
+    min-height: 10em;
+}
+
+.intro-wrapper{
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+
+    -webkit-box-shadow: 47px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 47px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 47px 10px 5px 0px rgba(0,0,0,0.75);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav-wrapper{
+    border: 1px dashed lightcoral;
+}
+
+.left-column{
+    border: 1px dashed lightcoral;
+}
+
+.right-column{
+    border: 1px dashed lightcoral;
 }
 
 @media screen and (max-wdith: 1200px){
