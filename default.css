@@ -75,17 +75,24 @@ h6{ font-size: 16px }
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'left-column right-column'
+    ;
 }
 
 .nav-wrapper{
-    border: 1px dashed lightcoral;
+    grid-area: nav-wrapper;
+    border: 1px dashed lightcoral;    
 }
 
 .left-column{
+    grid-area: left-column;
     border: 1px dashed lightcoral;
 }
 
 .right-column{
+    grid-area: right-column;
     border: 1px dashed lightcoral;
 }
 
