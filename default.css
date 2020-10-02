@@ -60,14 +60,14 @@ h6{ font-size: 16px }
 .greeting-wrapper{
     display: grid;
     text-align: center;
-    align-content: center;
-    border: 2px dashed lightcoral;
+    align-content: center;    
     min-height: 10em;
 }
 
 .intro-wrapper{
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
 
     -webkit-box-shadow: 47px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 47px 10px 5px 0px rgba(0,0,0,0.75);
@@ -75,6 +75,7 @@ h6{ font-size: 16px }
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
     grid-template-areas: 
         'nav-wrapper nav-wrapper'
         'left-column right-column'
@@ -83,17 +84,15 @@ h6{ font-size: 16px }
 
 .nav-wrapper{
     grid-area: nav-wrapper;
-    border: 1px dashed lightcoral;    
+    border-bottom: 1px solid var(--borderColor);
 }
 
 .left-column{
-    grid-area: left-column;
-    border: 1px dashed lightcoral;
+    grid-area: left-column;    
 }
 
 .right-column{
-    grid-area: right-column;
-    border: 1px dashed lightcoral;
+    grid-area: right-column;    
 }
 
 @media screen and (max-wdith: 1200px){
