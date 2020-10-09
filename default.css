@@ -266,6 +266,29 @@ h6{ font-size: 16px }
     background-color: var(--previewShadow);
 }
 
+.socials{    
+    align-content: center;
+    text-align: center;
+}
+
+.projects-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.post{
+    border: 1px solid var(--borderColor);
+}
+
+.thumbnail{
+    display: block;
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
 @media screen and (max-wdith: 1200px){
     .main-container{
         width: 95%;
